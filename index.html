@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smile Photo</title>
+  <link rel="icon" href="./public/icons8-lens-16.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="header">
+    <section>
+      <button class="menu-btn" id="menuBtn">☰</button>
+      <div class="side-menu" id="sideMenu">
+        <a href="#">Inicio</a>
+        <a href="#">Servicios</a>
+        <a href="#">Galería</a>
+        <a href="#">Precios</a>
+        <a href="#">Contacto</a>
+      </div>
+      <div class="menu-bg" id="menuBg"></div>
+    </section>
+
+  </header>
+  <main class="main-container">
+    <div class="carousel">
+      <img src="./public/1.jpg" class="active">
+      <img src="./public/2.jpg">
+      <img src="./public/4.jpg">
+      <div class="controls">
+        <button id="prev">⟨</button>
+        <button id="next">⟩</button>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <p class="format__copy">&copy; 2025 spinosaurus.dev</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+
+</html>
