@@ -99,6 +99,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  /* position: fixed;
+  top: 0px;
+  left: 0px; */
 }
 
 .header-menu {
@@ -228,7 +231,7 @@
   background-color: var(--clr-12-025);
   border: none;
   color: var(--clr-0);
-  padding: 10px 13.3px 15px 13.3px;
+  padding: 10px 13.3px 24px 13.3px;
   cursor: pointer;
   font-size: 70px;
 }
