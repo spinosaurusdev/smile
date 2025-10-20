@@ -1,12 +1,14 @@
 const menuBtn = document.getElementById("menuBtn");
 const sideMenu = document.getElementById("sideMenu");
 const menuBg = document.getElementById("menuBg");
+const copyRg = document.getElementById("copyrg");
 
 // Alternar menu con el mismo botón
 menuBtn.addEventListener("click", () => {
   sideMenu.classList.toggle("open");
   menuBg.classList.toggle("active");
   menuBtn.classList.toggle("active");
+  copyRg.classList.toggle("open");
 });
 
 // Permitir cerrar el menú haciendo clic fuera del menú
@@ -14,6 +16,7 @@ menuBg.addEventListener("click", () => {
   sideMenu.classList.remove("open");
   menuBg.classList.remove("active");
   menuBtn.classList.remove("active");
+  copyRg.classList.remove("open");
 });
 
 //Script for the image carousel
@@ -38,8 +41,8 @@ document.getElementById("prev").addEventListener("click", () => {
   showImage(current);
 });
 
-// Cambio automático cada 3 segundos
+// Automatic change every 5 seconds
 setInterval(() => {
   current = (current + 1) % images.length;
   showImage(current);
-}, 3000);
+}, 5000);

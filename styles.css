@@ -140,7 +140,7 @@
   height: 100%;
   background-color: var(--clr-10-05);
   box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
-  transition: right 0.3s ease;
+  transition: left 0.3s ease;
   z-index: 100;
   padding-top: 70px;
   display: flex;
@@ -162,6 +162,22 @@
 
 .side-menu a:hover {
   background-color: #444;
+}
+
+.copy {
+  position: fixed;
+  bottom: 0;
+  left: -30;
+  color: var(--clr-0);
+  font-size: 14px;
+  padding: 20px 30px;
+  transition: left 0.3s ease;
+  width: 30vw;
+  max-width: 400px;
+}
+
+.copy.open {
+  left: 0;
 }
 
 .menu-bg {
