@@ -13,6 +13,7 @@ menuBtn.addEventListener("click", () => {
 menuBg.addEventListener("click", () => {
   sideMenu.classList.remove("open");
   menuBg.classList.remove("active");
+  menuBtn.classList.remove("active");
 });
 
 //Script for the image carousel
