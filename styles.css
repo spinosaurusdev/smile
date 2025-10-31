@@ -27,6 +27,7 @@
   --clr-11: rgb(7, 7, 7);
   --clr-12: rgb(0, 0, 0);
   --clr-14: rgba(0, 0, 0, 0);
+  --clr-15: rgba(0, 0, 0, 0.1);
   /* glass 0.5*/
   --clr-0-05: rgba(255, 255, 255, 0.5);
   --clr-1-05: rgba(248, 249, 250, 0.5);
@@ -99,7 +100,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--clr-0);
+  background-color: var(--clr-0-025);
+  box-shadow: 0 4px 30px var(--clr-15);
   z-index: 100;
   position: fixed;
   top: 0px;
@@ -111,7 +113,7 @@
   position: fixed;
   top: 10px;
   left: 70px;
-  z-index: 102;
+  z-index: 140;
 }
 
 .menu-btn {
