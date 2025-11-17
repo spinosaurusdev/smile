@@ -110,9 +110,9 @@
 }
 
 .header-logo {
-  height: 35px;
+  width: 119px;
   position: fixed;
-  top: 10px;
+  top: -20px;
   left: 70px;
   z-index: 140;
 }
