@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-ca">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Smile Photo</title>
-  <link rel="icon" href="./public/icons8-lens-16.png" type="image/x-icon">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="/public/SMILE ISOTIPO.png" type="image/x-icon">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="alternate" href="/fr/accueil.html" hreflang="fr-ca" />
+  <link rel="alternate" href="/es/inicio.html" hreflang="es-ca" />
+  <link rel="alternate" href="/en/home.html" hreflang="en-ca" />
+  <link rel="alternate" href="/es/inicio.html" hreflang="x-default" />
 </head>
 
 <body>
@@ -24,21 +28,21 @@
       <div class="menu-bg" id="menuBg"></div>
     </section>
     <section class="horizontal-bar">
-      <img src="./public/smilePhoto.png" alt="smile logo" class="header-logo">
-      <div class="languages">
-        <a href="/fr/accueil.html">FR</a>
-        <a href="/es/inicio.html">ES</a>
-        <a href="/en/home.html">EN</a>
+      <img src="/public/SMILE IMAGOTIPO.png" alt="smile logo" class="header-logo">
+      <div class="languages" id="language-menu">
+        <a href="/fr/accueil.html" data-lang="fr">FR</a>
+        <a href="/es/inicio.html" data-lang="es">ES</a>
+        <a href="/en/home.html" data-lang="en">EN</a>
       </div>
     </section>
 
   </header>
   <main class="main-container">
     <div class="carousel">
-      <img src="./public/1.jpg" class="active">
-      <img src="./public/2.jpg">
-      <img src="./public/3.jpg">
-      <img src="./public/4.jpg">
+      <img src="/public/1.jpg" class="active">
+      <img src="/public/2.jpg">
+      <img src="/public/3.jpg">
+      <img src="/public/4.jpg">
       <div class="controls">
         <button id="prev">⟨</button>
         <button id="next">⟩</button>
@@ -48,7 +52,7 @@
   <footer class="footer">
     <p class="format__copy">&copy; 2025 spinosaurus.dev</p>
   </footer>
-  <script src="app.js"></script>
+  <script src="/app.js"></script>
 </body>
 
 </html>

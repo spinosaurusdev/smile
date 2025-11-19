@@ -65,6 +65,7 @@
   --fnt6: rgba(196, 98, 28, 1);
   --fnt7: rgba(89, 89, 89, 1);
   --fnt8: rgba(247, 247, 247, 1);
+  --fnt9: rgb(187, 41, 41);
 
   /* light theme */
   --background-color: var(--clr-0);
@@ -109,9 +110,9 @@
 }
 
 .header-logo {
-  height: 35px;
+  width: 119px;
   position: fixed;
-  top: 10px;
+  top: -20px;
   left: 70px;
   z-index: 140;
 }
@@ -163,7 +164,29 @@
 }
 
 .side-menu a:hover {
-  background-color: #444;
+  background-color: var(--fnt7);
+}
+
+.languages { 
+  position: fixed;
+  top: 17px;
+  right: 28px;
+  z-index: 140;
+}
+
+.languages a {
+  color: var(--clr-10);
+  margin-left: 7px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.languages a:hover {
+  color: var(--fnt7);
+}
+
+.active-lang {
+  font-weight: bold;
 }
 
 .copy {

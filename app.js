@@ -2,8 +2,10 @@ const menuBtn = document.getElementById("menuBtn");
 const sideMenu = document.getElementById("sideMenu");
 const menuBg = document.getElementById("menuBg");
 const copyRg = document.getElementById("copyrg");
+const currentLang = window.location.pathname.split("/")[1];
+const langLinks = document.querySelectorAll("#language-menu a");
 
-// Alternar menu con el mismo botón
+// Toggle menu with the same button
 menuBtn.addEventListener("click", () => {
   sideMenu.classList.toggle("open");
   menuBg.classList.toggle("active");
@@ -11,7 +13,7 @@ menuBtn.addEventListener("click", () => {
   copyRg.classList.toggle("open");
 });
 
-// Permitir cerrar el menú haciendo clic fuera del menú
+// Allow closing the menu by clicking outside the menu
 menuBg.addEventListener("click", () => {
   sideMenu.classList.remove("open");
   menuBg.classList.remove("active");
@@ -46,3 +48,13 @@ setInterval(() => {
   current = (current + 1) % images.length;
   showImage(current);
 }, 5000);
+
+// Highlight the active language in the language menu
+langLinks.forEach((link) => {
+  if (link.getAttribute("data-lang") === currentLang) {
+    // Add a class to highlight the active language.
+    link.classList.add("active-lang");
+  } else {
+    link.classList.remove("active-lang");
+  }
+});

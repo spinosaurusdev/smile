@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo View Transition</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 3rem;
+            text-align: center;
+        }
+
+        .caja {
+            width: 200px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: #d2ecfa;
+            border-radius: 12px;
+            font-size: 1.4rem;
+            transition: background 0.5s;
+        }
+
+        .alternativa {
+            background: #fae2d2;
+        }
+
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade-out {
+            from {
+                opacity: 1;
+            }
+
+            to {
+                opacity: 0;
+            }
+        }
+
+        ::view-transition-old(root) {
+            animation: fade-out 0.4s both;
+        }
+
+        ::view-transition-new(root) {
+            animation: fade-in 0.4s both;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="toggleBtn">Cambiar contenido</button>
+    <div class="caja" id="contentBox">Vista original</div>
+    <script src="app.js">
+
+    </script>
+</body>
+
+</html>
