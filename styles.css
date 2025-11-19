@@ -220,12 +220,7 @@
   display: block;
 }
 
-/* @media (max-width: 600px) {
-      .side-menu {
-        width: 80vw;
-        max-width: none;
-      }
-    } */
+
 
 .main-container {
   width: 100%;
@@ -236,15 +231,20 @@
 }
 
 .carousel {
+  position: fixed;
+  top: 0;
   width: 100vw;
+  max-width: 100%;
   height: 100vh;
-  position: relative;
+  max-height: 60vw; /* Relative to the width to maintain proportion */
   overflow: hidden;
 }
 
+/* Responsive images and we avoid forcing 100% height on mobile devices */
 .carousel img {
   width: 100%;
   height: 100%;
+  max-width: 100%;
   object-fit: cover;
   display: none;
   position: absolute;
@@ -284,4 +284,29 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+/* Media queries: improves the experience on screens smaller than 768px */
+@media (max-width: 768px) {
+  .carousel {
+    height: 40vh;
+    max-height: 50vw; /* lower height for mobile phones */
+  }
+  .carousel img {
+    object-fit: contain; /* better fit on small screens */
+  }
+}
+
+/* Optional: even smaller on very small mobile */
+@media (max-width: 420px) {
+  .carousel {
+    top: 49px;
+    height: 30vh;
+    max-height: 60vw;
+  }
+
+  .controls button {
+  padding: 5px 6.65px 12px 6.65px;
+  font-size: 2rem;
+  }
 }
