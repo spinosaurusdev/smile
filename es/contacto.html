@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es-ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smile Photo</title>
+    <link rel="icon" href="/public/SMILE ISOTIPO.png" type="image/x-icon">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="alternate" href="/fr/accueil.html" hreflang="fr-ca" />
+    <link rel="alternate" href="/es/inicio.html" hreflang="es-ca" />
+    <link rel="alternate" href="/en/home.html" hreflang="en-ca" />
+    <link rel="alternate" href="/es/inicio.html" hreflang="x-default" />
+</head>
+
+<body>
+    <header class="header">
+        <section>
+            <button class="menu-btn" id="menuBtn">☰</button>
+            <div class="side-menu" id="sideMenu">
+                <a href="/es/inicio.html">Inicia aqui</a>
+                <a href="/es/sesiones.html">Tu próxima sesión</a>
+                <a href="/es/galeria.html">Mi trabajo</a>
+                <a href="/es/paquetes.html">Paquetes</a>
+                <a href="/es/contacto.html">Hablemos</a>
+                <p class="copy" id="copyRg">&copy; 2025 spinosaurus.dev</p>
+            </div>
+            <div class="menu-bg" id="menuBg"></div>
+        </section>
+        <section class="horizontal-bar">
+            <img src="/public/SMILE IMAGOTIPO.png" alt="smile logo" class="header-logo">
+            <div class="languages" id="language-menu">
+                <a href="/fr/accueil.html" data-lang="fr">FR</a>
+                <a href="/es/inicio.html" data-lang="es">ES</a>
+                <a href="/en/home.html" data-lang="en">EN</a>
+            </div>
+        </section>
+
+    </header>
+    <main class="main-container">
+        <h1>Contacto</h1>
+        <form class="contact-form">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    <footer class="footer">
+        <p class="format__copy">&copy; 2025 spinosaurus.dev</p>
+    </footer>
+    <script src="/app.js"></script>
+</body>
+
+</html>
