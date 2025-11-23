@@ -4,56 +4,111 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Smile Photo</title>
-  <link rel="icon" href="/public/SMILE ISOTIPO.png" type="image/x-icon">
-  <link rel="stylesheet" href="/styles.css">
-  <link rel="alternate" href="/fr/accueil.html" hreflang="fr-ca" />
-  <link rel="alternate" href="/es/inicio.html" hreflang="es-ca" />
-  <link rel="alternate" href="/en/home.html" hreflang="en-ca" />
-  <link rel="alternate" href="/en/home.html" hreflang="x-default" />
 
+  <!-- SEO Meta Tags -->
+  <title>Smile Photo - Professional Photography in Canada | Home</title>
+  <meta name="description"
+    content="Smile Photo offers professional photography services in Canada. We capture your special moments with creativity and passion. Personalized photo sessions for weddings, events, and portraits.">
+  <meta name="keywords"
+    content="professional photography, photographer Canada, photo sessions, portraits, weddings, events, Smile Photo">
+  <meta name="author" content="Smile Photo">
+  <link rel="canonical" href="https://smilephotocanada.com/en/home.html">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Smile Photo - Professional Photography in Canada">
+  <meta property="og:description"
+    content="We capture your special moments with creativity and passion. Professional photography services for weddings, events, and portraits in Canada.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://smilephotocanada.com/en/home.html">
+  <meta property="og:image" content="https://smilephotocanada.com/public/SMILE IMAGOTIPO.png">
+  <meta property="og:locale" content="en_CA">
+  <meta property="og:locale:alternate" content="es_CA">
+  <meta property="og:locale:alternate" content="fr_CA">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Smile Photo - Professional Photography in Canada">
+  <meta name="twitter:description"
+    content="We capture your special moments with creativity and passion. Professional photography services in Canada.">
+  <meta name="twitter:image" content="https://smilephotocanada.com/public/SMILE IMAGOTIPO.png">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/public/SMILE ISOTIPO.png" type="image/x-icon">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Hreflang Tags -->
+  <link rel="alternate" href="https://smilephotocanada.com/fr/accueil.html" hreflang="fr-ca" />
+  <link rel="alternate" href="https://smilephotocanada.com/es/inicio.html" hreflang="es-ca" />
+  <link rel="alternate" href="https://smilephotocanada.com/en/home.html" hreflang="en-ca" />
+  <link rel="alternate" href="https://smilephotocanada.com/es/inicio.html" hreflang="x-default" />
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Smile Photo",
+    "image": "https://smilephotocanada.com/public/SMILE IMAGOTIPO.png",
+    "description": "Professional photography services in Canada",
+    "telephone": "+1-819-314-4415",
+    "email": "smilephotocanada@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "CA"
+    },
+    "url": "https://smilephotocanada.com",
+    "priceRange": "$$",
+    "openingHours": "Mo-Su",
+    "sameAs": []
+  }
+  </script>
 </head>
 
 <body>
   <header class="header">
     <section>
-      <button class="menu-btn" id="menuBtn">☰</button>
-      <div class="side-menu" id="sideMenu">
-        <a href="#">Start Here</a>
-        <a href="#">Your Next Session</a>
-        <a href="#">My Work</a>
-        <a href="#">Packages</a>
-        <a href="#">Let's Talk</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation menu">☰</button>
+      <nav class="side-menu" id="sideMenu" aria-label="Main navigation">
+        <a href="/en/home.html" aria-current="page">Start Here</a>
+        <a href="/en/sessions.html">Your Next Session</a>
+        <a href="/en/gallery.html">My Work</a>
+        <a href="/en/packages.html">Packages</a>
+        <a href="/en/contact.html">Let's Talk</a>
         <p class="copy" id="copyRg">&copy; 2025 spinosaurus.dev</p>
-      </div>
+      </nav>
       <div class="menu-bg" id="menuBg"></div>
     </section>
     <section class="horizontal-bar">
-      <img src="/public/SMILE IMAGOTIPO.png" alt="smile logo" class="header-logo">
-      <div class="languages" id="language-menu">
-        <a href="/fr/accueil.html" data-lang="fr">FR</a>
-        <a href="/es/inicio.html" data-lang="es">ES</a>
-        <a href="/en/home.html" data-lang="en">EN</a>
-      </div>
+      <img src="/public/SMILE IMAGOTIPO.png" alt="Smile Photo - Professional photography logo" class="header-logo">
+      <nav class="languages" id="language-menu" aria-label="Language selector">
+        <a href="/fr/accueil.html" data-lang="fr" hreflang="fr-ca">FR</a>
+        <a href="/es/inicio.html" data-lang="es" hreflang="es-ca">ES</a>
+        <a href="/en/home.html" data-lang="en" hreflang="en-ca" aria-current="page">EN</a>
+      </nav>
     </section>
-
   </header>
+
   <main class="main-container">
-    <div class="carousel">
-      <img src="/public/1.jpg" class="active">
-      <img src="/public/2.jpg">
-      <img src="/public/3.jpg">
-      <img src="/public/4.jpg">
+    <h1 class="visually-hidden">Smile Photo - Professional Photography in Canada</h1>
+    <div class="carousel" role="region" aria-label="Featured photography gallery">
+      <img src="/public/1.jpg" alt="Professional photography - Artistic portrait" class="active" loading="eager">
+      <img src="/public/2.jpg" alt="Professional photography - Couple session" loading="lazy">
+      <img src="/public/3.jpg" alt="Professional photography - Special event" loading="lazy">
+      <img src="/public/4.jpg" alt="Professional photography - Creative portrait" loading="lazy">
       <div class="controls">
-        <button id="prev">⟨</button>
-        <button id="next">⟩</button>
+        <button id="prev" aria-label="Previous image">⟨</button>
+        <button id="next" aria-label="Next image">⟩</button>
       </div>
     </div>
   </main>
+
   <footer class="footer">
-    <p>819 314 4415</p>
-    <p>smilephotocanada@gmail.com</p>
+    <p><a href="tel:+18193144415">819 314 4415</a></p>
+    <p><a href="mailto:smilephotocanada@gmail.com">smilephotocanada@gmail.com</a></p>
   </footer>
+
   <script src="/app.js"></script>
 </body>
 

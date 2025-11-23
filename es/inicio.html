@@ -4,55 +4,111 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Smile Photo</title>
+
+  <!-- SEO Meta Tags -->
+  <title>Smile Photo - Fotografía Profesional en Canadá | Inicio</title>
+  <meta name="description"
+    content="Smile Photo ofrece servicios de fotografía profesional en Canadá. Capturamos tus momentos especiales con creatividad y pasión. Sesiones fotográficas personalizadas para bodas, eventos y retratos.">
+  <meta name="keywords"
+    content="fotografía profesional, fotógrafo Canadá, sesiones fotográficas, retratos, bodas, eventos, Smile Photo">
+  <meta name="author" content="Smile Photo">
+  <link rel="canonical" href="https://smilephotocanada.com/es/inicio.html">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Smile Photo - Fotografía Profesional en Canadá">
+  <meta property="og:description"
+    content="Capturamos tus momentos especiales con creatividad y pasión. Servicios de fotografía profesional para bodas, eventos y retratos en Canadá.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://smilephotocanada.com/es/inicio.html">
+  <meta property="og:image" content="https://smilephotocanada.com/public/SMILE IMAGOTIPO.png">
+  <meta property="og:locale" content="es_CA">
+  <meta property="og:locale:alternate" content="en_CA">
+  <meta property="og:locale:alternate" content="fr_CA">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Smile Photo - Fotografía Profesional en Canadá">
+  <meta name="twitter:description"
+    content="Capturamos tus momentos especiales con creatividad y pasión. Servicios de fotografía profesional en Canadá.">
+  <meta name="twitter:image" content="https://smilephotocanada.com/public/SMILE IMAGOTIPO.png">
+
+  <!-- Favicon -->
   <link rel="icon" href="/public/SMILE ISOTIPO.png" type="image/x-icon">
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="/styles.css">
-  <link rel="alternate" href="/fr/accueil.html" hreflang="fr-ca" />
-  <link rel="alternate" href="/es/inicio.html" hreflang="es-ca" />
-  <link rel="alternate" href="/en/home.html" hreflang="en-ca" />
-  <link rel="alternate" href="/es/inicio.html" hreflang="x-default" />
+
+  <!-- Hreflang Tags -->
+  <link rel="alternate" href="https://smilephotocanada.com/fr/accueil.html" hreflang="fr-ca" />
+  <link rel="alternate" href="https://smilephotocanada.com/es/inicio.html" hreflang="es-ca" />
+  <link rel="alternate" href="https://smilephotocanada.com/en/home.html" hreflang="en-ca" />
+  <link rel="alternate" href="https://smilephotocanada.com/es/inicio.html" hreflang="x-default" />
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Smile Photo",
+    "image": "https://smilephotocanada.com/public/SMILE IMAGOTIPO.png",
+    "description": "Servicios de fotografía profesional en Canadá",
+    "telephone": "+1-819-314-4415",
+    "email": "smilephotocanada@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "CA"
+    },
+    "url": "https://smilephotocanada.com",
+    "priceRange": "$$",
+    "openingHours": "Mo-Su",
+    "sameAs": []
+  }
+  </script>
 </head>
 
 <body>
   <header class="header">
     <section>
-      <button class="menu-btn" id="menuBtn">☰</button>
-      <div class="side-menu" id="sideMenu">
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menú de navegación">☰</button>
+      <nav class="side-menu" id="sideMenu" aria-label="Menú principal">
         <a href="/es/inicio.html">Inicia aqui</a>
         <a href="/es/sesiones.html">Tu próxima sesión</a>
         <a href="/es/galeria.html">Mi trabajo</a>
         <a href="/es/paquetes.html">Paquetes</a>
         <a href="/es/contacto.html">Hablemos</a>
         <p class="copy" id="copyRg">&copy; 2025 spinosaurus.dev</p>
-      </div>
+      </nav>
       <div class="menu-bg" id="menuBg"></div>
     </section>
     <section class="horizontal-bar">
-      <img src="/public/SMILE IMAGOTIPO.png" alt="smile logo" class="header-logo">
-      <div class="languages" id="language-menu">
-        <a href="/fr/accueil.html" data-lang="fr">FR</a>
-        <a href="/es/inicio.html" data-lang="es">ES</a>
-        <a href="/en/home.html" data-lang="en">EN</a>
-      </div>
+      <img src="/public/SMILE IMAGOTIPO.png" alt="Smile Photo - Logotipo de fotografía profesional" class="header-logo">
+      <nav class="languages" id="language-menu" aria-label="Selector de idioma">
+        <a href="/fr/accueil.html" data-lang="fr" hreflang="fr-ca">FR</a>
+        <a href="/es/inicio.html" data-lang="es" hreflang="es-ca" aria-current="page">ES</a>
+        <a href="/en/home.html" data-lang="en" hreflang="en-ca">EN</a>
+      </nav>
     </section>
-
   </header>
+
   <main class="main-container">
-    <div class="carousel">
-      <img src="/public/1.jpg" class="active">
-      <img src="/public/2.jpg">
-      <img src="/public/3.jpg">
-      <img src="/public/4.jpg">
+    <h1 class="visually-hidden">Smile Photo - Fotografía Profesional en Canadá</h1>
+    <div class="carousel" role="region" aria-label="Galería de fotografías destacadas">
+      <img src="/public/1.jpg" alt="Fotografía profesional - Retrato artístico" class="active" loading="eager">
+      <img src="/public/2.jpg" alt="Fotografía profesional - Sesión de pareja" loading="lazy">
+      <img src="/public/3.jpg" alt="Fotografía profesional - Evento especial" loading="lazy">
+      <img src="/public/4.jpg" alt="Fotografía profesional - Retrato creativo" loading="lazy">
       <div class="controls">
-        <button id="prev">⟨</button>
-        <button id="next">⟩</button>
+        <button id="prev" aria-label="Imagen anterior">⟨</button>
+        <button id="next" aria-label="Siguiente imagen">⟩</button>
       </div>
     </div>
   </main>
+
   <footer class="footer">
-    <p>819 314 4415</p>
-    <p>smilephotocanada@gmail.com</p>
+    <p><a href="tel:+18193144415">819 314 4415</a></p>
+    <p><a href="mailto:smilephotocanada@gmail.com">smilephotocanada@gmail.com</a></p>
   </footer>
+
   <script src="/app.js"></script>
 </body>
 
