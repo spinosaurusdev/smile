@@ -1,51 +1,50 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Carrusel de imágenes</title>
-  <style>
-   
-  </style>
-</head>
-<body>
+# Smile Photo
 
-  <div class="carousel">
-    <img src="img/foto1.jpg" class="active">
-    <img src="img/foto2.jpg">
-    <img src="img/foto3.jpg">
-    <div class="controls">
-      <button id="prev">⟨</button>
-      <button id="next">⟩</button>
-    </div>
-  </div>
+Welcome to the **Smile Photo** project repository. This is a professional photography portfolio website built with vanilla HTML, CSS, and JavaScript.
 
-  <script>
-    const images = document.querySelectorAll('.carousel img');
-    let current = 0;
+## Features
 
-    function showImage(index) {
-      images.forEach((img, i) => {
-        img.classList.remove('active');
-        if (i === index) img.classList.add('active');
-      });
-    }
+- **Responsive Design**: Optimized for desktop, tablet, and mobile devices.
+- **Multilingual Support**: content available in:
+  - Spanish (Default/Root)
+  - English (`/en`)
+  - French (`/fr`)
+- **Dark/Light Theme**: Automatic theme adjustment based on CSS variables and system preferences (configurable).
+- **Interactive UI**:
+  - Custom image carousel with auto-play and manual controls.
+  - Sidebar navigation menu with overlay.
+  - Active language highlighting.
 
-    document.getElementById('next').addEventListener('click', () => {
-      current = (current + 1) % images.length;
-      showImage(current);
-    });
+## Project Structure
 
-    document.getElementById('prev').addEventListener('click', () => {
-      current = (current - 1 + images.length) % images.length;
-      showImage(current);
-    });
+```text
+.
+├── index.html        # Main entry point (Spanish landing page)
+├── app.js            # Core logic (Carousel, Menu, Language toggle)
+├── styles.css        # Main stylesheet (Themes, Layout, Responsive)
+├── public/           # Assets (Images, Icons)
+├── en/               # English localized pages
+├── fr/               # French localized pages
+└── es/               # Spanish pages (sub-pages like gallery, contact)
+```
 
-    // Cambio automático cada 3 segundos
-    setInterval(() => {
-      current = (current + 1) % images.length;
-      showImage(current);
-    }, 3000);
-  </script>
+## Setup & Usage
 
-</body>
-</html>
+Since this is a static site, no build process is required.
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/spinosaurusdev/smile.git
+   ```
+2. **Open `index.html`** in your preferred web browser.
+   - Or use a local development server (e.g., Live Server in VS Code) for the best experience.
+
+## Technologies
+
+- **HTML5**: Semantic structure.
+- **CSS3**: Variables, Flexbox, Media Queries.
+- **JavaScript (ES6+)**: DOM manipulation, Event handling.
+
+## License
+
+&copy; 2025 spinosaurus.dev
