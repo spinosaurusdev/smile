@@ -1,0 +1,25 @@
+{
+  "name": "smile",
+  "version": "1.0.0",
+  "description": "Welcome to the **Smile Photo** project repository. This is a professional photography portfolio website built with vanilla HTML, CSS, and JavaScript.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spinosaurusdev/smile.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/spinosaurusdev/smile/issues"
+  },
+  "homepage": "https://github.com/spinosaurusdev/smile#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
